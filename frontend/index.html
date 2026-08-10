@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AWS Image Resizer</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <main class="container">
+
+        <header class="header">
+
+            <div class="logo">
+                AWS
+                <span>Image Resizer</span>
+            </div>
+
+            <div class="cloud-badge">
+                ☁ Serverless Project
+            </div>
+
+        </header>
+
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <div class="badge">
+                    AWS • Lambda • S3 • API Gateway
+                </div>
+
+                <h1>
+                    Resize images
+                    <span>automatically</span>
+                    with AWS
+                </h1>
+
+                <p>
+                    Upload an image and let our serverless AWS
+                    architecture resize it automatically using
+                    Amazon S3, Lambda and API Gateway.
+                </p>
+
+                <div class="features">
+
+                    <div>
+                        ⚡ Serverless
+                    </div>
+
+                    <div>
+                        🔒 Secure Upload
+                    </div>
+
+                    <div>
+                        ☁ AWS Powered
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="upload-card">
+
+                <div class="card-header">
+
+                    <h2>Resize your image</h2>
+
+                    <p>
+                        JPG, JPEG, PNG or WEBP
+                    </p>
+
+                </div>
+
+
+                <label
+                    for="fileInput"
+                    class="drop-zone"
+                >
+
+                    <div class="upload-icon">
+                        ⇧
+                    </div>
+
+                    <h3>
+                        Choose an image
+                    </h3>
+
+                    <p>
+                        Click here to browse your computer
+                    </p>
+
+                    <input
+                        type="file"
+                        id="fileInput"
+                        accept="image/jpeg,image/png,image/webp"
+                        hidden
+                    >
+
+                </label>
+
+
+                <div class="preview-container">
+
+                    <img
+                        id="preview"
+                        alt="Selected image preview"
+                    >
+
+                </div>
+
+
+                <button
+                    id="uploadBtn"
+                    class="primary-button"
+                >
+                    Resize Image
+                </button>
+
+
+                <div
+                    id="statusText"
+                    class="status"
+                >
+                    Select an image to begin
+                </div>
+
+
+                <a
+                    id="downloadBtn"
+                    class="download-button"
+                    target="_blank"
+                >
+                    ↓ Download Resized Image
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="architecture">
+
+            <h2>
+                How it works
+            </h2>
+
+            <p class="architecture-description">
+                A completely serverless image processing workflow.
+            </p>
+
+
+            <div class="architecture-grid">
+
+                <div class="architecture-card">
+
+                    <div class="service-icon">
+                        🌐
+                    </div>
+
+                    <h3>Web App</h3>
+
+                    <p>
+                        User selects an image from the browser.
+                    </p>
+
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="architecture-card">
+
+                    <div class="service-icon">
+                        🔗
+                    </div>
+
+                    <h3>API Gateway</h3>
+
+                    <p>
+                        Secure API communicates with Lambda.
+                    </p>
+
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="architecture-card">
+
+                    <div class="service-icon">
+                        🪣
+                    </div>
+
+                    <h3>Amazon S3</h3>
+
+                    <p>
+                        Stores the original uploaded image.
+                    </p>
+
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="architecture-card">
+
+                    <div class="service-icon">
+                        λ
+                    </div>
+
+                    <h3>AWS Lambda</h3>
+
+                    <p>
+                        Pillow automatically resizes the image.
+                    </p>
+
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="architecture-card">
+
+                    <div class="service-icon">
+                        🖼
+                    </div>
+
+                    <h3>Resized S3</h3>
+
+                    <p>
+                        Stores the processed image for download.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            Built using AWS Serverless Architecture
+
+            <span>
+                • AWS Image Resizer
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

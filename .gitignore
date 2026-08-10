@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Lambda build/package folders
+lambda-package/
+api-package/
+
+# Deployment ZIP files
+*.zip
+
+# Test/generated images
+resized-*.jpg
+resized-*.jpeg
+resized-*.png
+resized-*.webp
+*-test.jpg
+*-test.png
+
+# Temporary policy/config files
+trust-policy.json
+lambda-trust-policy.json
+s3-permission-policy.json
+image-resizer-s3-policy.json
+api-s3-policy.json
+s3-notification.json
+s3-cors.json
+cors-fix.json
+production-cors.json
+frontend-bucket-policy.json
+cloudfront-config.json
+oac-config.json
+notification.json
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
