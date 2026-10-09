@@ -168,3 +168,11 @@ aws-image-resizer/
 
 └── .gitignore
 
+
+```
+
+## Personal Finance Tracker
+
+This repository also includes [Mintbook](personal-finance-tracker/README.md), a standalone personal finance tracker with income and expense management, monthly budgets, category reports, and local browser storage.
+
+Run `cd personal-finance-tracker && python3 -m http.server 3000`, then open http://localhost:3000.
